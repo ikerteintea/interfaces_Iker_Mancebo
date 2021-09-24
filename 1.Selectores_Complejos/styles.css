@@ -1,0 +1,44 @@
+td[colspan="2"], td[rowspan="2"]{
+	background-color: #234E54;
+}
+
+td[colspan="3"], td[rowspan="3"]{
+	background-color: #ACA759;
+}
+
+td[colspan="4"], td[rowspan="4"]{
+	background-color: #CEA885;
+}
+
+li[id]{
+	color: purple;
+	font-family: Verdana, Geneva, sans-serif;
+	list-style-type: square;
+}
+
+li[id] .negrita {
+	background-color: #FF9;
+}
+
+.negrita {
+	font-weight: bold;
+}
+
+p + p {
+	text-decoration: underline;
+}
+
+.comentarios{
+	font-style: italic;
+	border: thin dotted #AC8159;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+li > a{
+	background-color: #755E8B;
+}
+
+.cursiva{
+	font-style: italic;
+}
