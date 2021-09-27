@@ -10,13 +10,13 @@ td[colspan="4"], td[rowspan="4"]{
 	background-color: #CEA885;
 }
 
-li[id]{
+li[id*="pregunta"]{
 	color: purple;
 	font-family: Verdana, Geneva, sans-serif;
 	list-style-type: square;
 }
 
-li[id] .negrita {
+li[id*="pregunta"] .negrita {
 	background-color: #FF9;
 }
 
@@ -35,7 +35,7 @@ p + p {
 	margin-right: 10%;
 }
 
-li > a{
+li[id] > a{
 	background-color: #755E8B;
 }
 
