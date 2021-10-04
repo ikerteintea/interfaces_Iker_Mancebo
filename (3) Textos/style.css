@@ -1,0 +1,32 @@
+h2 + p{
+	font-weight: bolder;
+	font-style: italic;
+	text-indent: 40px;
+}
+
+#consejo{
+	background-color: rgba(171, 255, 87, 0.53);
+	color: rebeccapurple;
+}
+#textolinea{
+	font-family: monospace; /*cambiar*/
+	font-variant: small-caps;
+	text-transform: capitalize;
+}
+
+h3{
+	background-color: saddlebrown;
+	color: white;
+}
+
+.clase{
+	font-weight: unset;
+	color: rebeccapurple;
+	font-style: italic;
+}
+
+#idparaestilo{
+	background-color: rebeccapurple;
+	font-family: fantasy;
+	color: white;
+}

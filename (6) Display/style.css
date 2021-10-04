@@ -1,0 +1,36 @@
+#negrita{
+	display: block;
+}
+
+.dp_inline{
+	display: inline;
+}
+
+.dp_list{
+	display: list-item;
+	list-style: square outside;
+	margin-left: 5%;
+}
+
+.dp_none{
+	display: none;
+}
+
+.dp_inblock{
+	display: inline-block;
+}
+
+.dp_tbcell{
+	display: table-cell;
+}
+
+.bloqueenlinea{
+	height: 10rem;
+	width: 10em;
+}
+
+#pDesplazar{
+	position: relative;
+	top: 20px;
+	right: 20px;
+}

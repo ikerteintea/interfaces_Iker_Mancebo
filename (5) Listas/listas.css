@@ -1,0 +1,55 @@
+/*body{
+	counter-reset: section;
+}*/
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #123D43;
+	text-decoration: underline;
+	text-align: center;
+	cursor: text;
+	text-shadow: 3px 3px 2px #789498;
+}
+
+
+ul.redes li {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	/* Estilos de li para cumplir las especifiaciones */
+	color: #442A5D;
+	list-style-image: url(imgs/vineta_circle1.png);
+}
+
+ /*p.titulo::before{
+	counter-increment: section;
+	content: counter(section);
+	font-weight: bold;
+	list-style-type: lower-roman;
+
+}*/
+
+p.titulo:first-letter{
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+p.titulo {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	background-color: #F9DDC3;
+	color: #6E431C;
+	display: list-item;
+}
+
+#otraasignatura {
+	background-color: #CEA885;
+	width: 6em;
+	text-align: center;
+	height: 1.5em;
+	vertical-align: middle;
+}
+a:hover{ /* Hay que conseguir que este estilo se aplique al posicionarse sobre el elemento con contenido LMSGI */
+	font-weight: bold;
+	color: #FFF;
+}
