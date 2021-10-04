@@ -23,10 +23,8 @@ ul.redes li {
 
  /*p.titulo::before{
 	counter-increment: section;
-	content: counter(section);
+	content: counter(section, lower-alpha) ") ";
 	font-weight: bold;
-	list-style-type: lower-roman;
-
 }*/
 
 p.titulo:first-letter{
