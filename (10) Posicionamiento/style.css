@@ -1,0 +1,81 @@
+  body{
+    font-size: 14px;
+  }
+  p:first-of-type{
+    text-align: right;
+  }
+  div.estandar{
+    width: 4.25em;
+    height: 4.25em;
+    padding: 3px;
+    position: absolute;
+  }
+  div#posicionamiento1{
+    position: absolute;
+    top: 50%;
+    /* Añadir propiedades de posicionamiento */
+    width: 100%;
+    height: 1px;
+    border-top: 1px dashed #CCCCCC ;
+  }
+  div#posicionamiento2{
+    /* Añadir propiedades de posicionamiento */
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    border-left: 1px dashed #CCCCCC;
+  }
+  div#posicionamiento3{
+    top: 0;
+    left: 0;
+    /* Añadir propiedades de posicionamiento */
+    border: 2px solid blue;
+  }
+  div#posicionamiento4{
+    bottom: 0;
+    left: 0;
+    /* Añadir propiedades de posicionamiento */
+    border: 2px solid green;
+  }
+  div#posicionamiento5{
+    top: 50%;
+    left: 50%;
+    /* Añadir propiedades de posicionamiento */
+    border: 2px solid red;
+  }
+  div#posicionamiento6{
+    bottom: 50%;
+    right: 50%;
+    /* Añadir propiedades de posicionamiento */
+    border: 2px solid orange;
+  }
+  div#posicionamiento7{
+    top: 50%;
+    right: 0;
+    /* Añadir propiedades de posicionamiento */
+    border: 2px solid pink;
+  }
+  div#posicionamiento8{
+    top: 70px;
+    left: 100px;
+    /* Añadir propiedades de posicionamiento */
+    border: 2px solid lime;
+  }
+  div#posicionamiento9{
+    top: 25%;
+    right: 25%;
+    /* Añadir propiedades de posicionamiento */
+    border: 2px solid cyan;
+  }
+  div#posicionamiento10{
+    /* Añadir propiedades de posicionamiento */
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    width: 28em;
+    height: 28em;
+    border: 2px solid cyan;
+    padding: 3px;
+  }
