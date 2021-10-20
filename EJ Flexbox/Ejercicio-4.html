@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 1</title>
+    <style media="screen">
+      #contenedor1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        background-color: gray;
+        height: 50px;
+        width: 500px;
+      }
+
+      #contenedor2 {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        background-color: gray;
+        height: 50px;
+        width: 500px;
+      }
+
+      #contenedor3 {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: gray;
+        height: 50px;
+        width: 500px;
+        flex-wrap: wrap-reverse;
+      }
+
+      #contenedor1 div,
+      #contenedor2 div,
+      #contenedor3 div {
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        color: white;
+        height: 25px;
+        width: 90px;
+      }
+
+      #contenedor1 div:nth-child(3) {
+        align-self: flex-start;
+      }
+
+      #contenedor2 div:nth-child(3) {
+        align-self: center;
+      }
+
+      #contenedor3 div:nth-child(1) {
+        height: 25px;
+      }
+      #contenedor3 div:nth-child(2) {
+        height: 15px;
+      }
+      #contenedor3 div:nth-child(3) {
+        height: 35px;
+      }
+      #contenedor3 div:nth-child(4) {
+        height: 45px;
+      }
+      #contenedor3 div:nth-child(5) {
+        height: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contenedor1">
+      <div class="">
+        1
+      </div>
+      <div class="">
+        2
+      </div>
+      <div class="">
+        3
+      </div>
+      <div class="">
+        4
+      </div>
+      <div class="">
+        5
+      </div>
+    </div>
+    <div id="contenedor2">
+      <div class="">
+        1
+      </div>
+      <div class="">
+        2
+      </div>
+      <div class="">
+        3
+      </div>
+      <div class="">
+        4
+      </div>
+      <div class="">
+        5
+      </div>
+    </div>
+    <div id="contenedor3">
+      <div class="">
+        1
+      </div>
+      <div class="">
+        2
+      </div>
+      <div class="">
+        3
+      </div>
+      <div class="">
+        4
+      </div>
+      <div class="">
+        5
+      </div>
+    </div>
+  </body>
+</html>
