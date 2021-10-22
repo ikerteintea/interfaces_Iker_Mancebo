@@ -14,7 +14,6 @@
   /* border: 1px solid black; */
 }
 
-
 footer {
   /* border: 1px solid black; */
 }
@@ -22,9 +21,43 @@ footer {
 .navegacion {
   border: 1px solid black;
   background-color: lightblue;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navegacion img {
+.navegacion > div:first-child {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* gap: 4rem; */
+  flex-grow: 1;
+}
+
+.navegacion > div:first-child > div:hover {
+  background-color: whitesmoke;
+  box-shadow: 1px 1px 1px 2px gray;
+}
+
+.navegacion > div:first-child > div {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navegacion > div:last-child {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navegacion img[src="img/flower.png"] {
+  height: 45px;
+  width: 45px;
+}
+.navegacion img[src="img/user.png"] {
   height: 45px;
   width: 45px;
 }
@@ -61,11 +94,6 @@ footer {
 .seccion img {
   height: calc(var(--width-seccion) / 2);
   width: var(--width-seccion);
-}
-
-.navegacion {
-  background-color: black;
-  color: white;
 }
 
 p {
