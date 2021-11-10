@@ -1,9 +1,0 @@
-#logo{
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  overflow: scroll;
-}
-body{
-  background-image: url(madrid.jpg);
-}
