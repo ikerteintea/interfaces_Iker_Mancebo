@@ -220,6 +220,10 @@ footer > div:last-child > img {
 }
 
 @media screen and (max-width: 700px) {
+  body{
+    margin: 0;
+  }
+
   #contenedor {
     grid-template-columns: auto;
     grid-template-rows: 50px auto auto auto;
