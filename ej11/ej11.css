@@ -1,0 +1,37 @@
+:root {
+  --box-height: 100px;
+  --box-width: 100px;
+}
+
+div {
+  border: solid 1px black;
+}
+
+#container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  transition: order 0s;
+}
+
+[class^="box"] {
+  position: relative;
+  left: 0;
+  height: var(--box-height);
+  width: var(--box-width);
+  background-color: red;
+  color: black;
+  transition-delay: 0.5s;
+  transition: all 4s
+}
+
+[class^="box"]:hover {
+  color: yellow;
+  font-size: 1.5em;
+  width: calc(var(--box-width) / 2);
+  height: calc(var(--box-height) / 2);
+  background-color: blue;
+  transform: rotate(270deg);
+}
