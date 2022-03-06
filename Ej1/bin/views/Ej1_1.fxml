@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <HBox prefHeight="60.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #336699;" BorderPane.alignment="TOP_LEFT">
+            <children>
+                <Button maxHeight="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" text="Current" />
+                <Button layoutX="10.0" layoutY="47.0" maxHeight="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" text="Rejected" />
+                <StackPane maxHeight="25.0" prefHeight="25.0" prefWidth="25.0">
+                    <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="?" />
+                    </children>
+                </StackPane>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <padding>
+                <Insets left="12.0" right="12.0" top="15.0" />
+            </padding>
+        </HBox>
+    </top>
+    <left>
+        <VBox prefHeight="200.0" prefWidth="150.0" spacing="8.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Data">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </Text>
+                <Hyperlink text="Sales">
+                    <VBox.margin>
+                        <Insets left="8.0" />
+                    </VBox.margin>
+                </Hyperlink>
+                <Hyperlink layoutX="28.0" layoutY="44.0" text="Marketing">
+                    <VBox.margin>
+                        <Insets left="8.0" />
+                    </VBox.margin>
+                </Hyperlink>
+                <Hyperlink layoutX="20.0" layoutY="76.0" text="Distribution">
+                    <VBox.margin>
+                        <Insets left="8.0" />
+                    </VBox.margin>
+                </Hyperlink>
+                <Hyperlink layoutX="20.0" layoutY="108.0" text="Costs">
+                    <VBox.margin>
+                        <Insets left="8.0" />
+                    </VBox.margin>
+                </Hyperlink>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <GridPane BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="155.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="445.0" minWidth="10.0" prefWidth="445.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="90.0" minHeight="45.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="45.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+                <TextField GridPane.columnIndex="1" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password" GridPane.rowIndex="1" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth" GridPane.rowIndex="2" />
+                <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" GridPane.rowIndex="3" />
+                <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <RadioButton mnemonicParsing="false" text="Male" />
+                        <RadioButton mnemonicParsing="false" text="Female" GridPane.columnIndex="1" />
+                    </children>
+                </GridPane>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Technologies" GridPane.rowIndex="4" />
+                <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <CheckBox mnemonicParsing="false" text="Java" />
+                        <CheckBox mnemonicParsing="false" text="Electron" GridPane.columnIndex="1" />
+                    </children>
+                </GridPane>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Qualifications" GridPane.rowIndex="5" />
+                <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Location" GridPane.rowIndex="6" />
+                <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            </children>
+            <BorderPane.margin>
+                <Insets right="10.0" />
+            </BorderPane.margin>
+        </GridPane>
+    </center>
+    <right>
+        <TilePane prefHeight="150.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="75.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../img/Img1.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="75.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../img/Img2.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="75.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../img/Img3.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="75.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../img/Img4.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </TilePane>
+    </right>
+</BorderPane>
